@@ -20,9 +20,12 @@ app.use(
 // use cors to allow cross origin resource sharing
 app.use(cors());
 
+
+const { API_GROUP_VER } = process.env;
+
 // Add routes for the API here
 var api_routes = ['file'];
-app.group("/api/v1", (router) => {
+app.group(`/api/v{API_GROUP_VER}`, (router) => {
     api_routes.map(x => router.use(`/${x}`, require(`./api/${x}`)));
 });
 
