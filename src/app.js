@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
     helmet({
         crossOriginEmbedderPolicy: false,
-        contentSecurityPolicy: false,
-        frameguard: false,
+        // contentSecurityPolicy: false,
+        // frameguard: false,
     })
 );
 
