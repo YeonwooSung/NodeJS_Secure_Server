@@ -1,0 +1,39 @@
+{
+  "name": "nodejs_secure_server",
+  "version": "1.0.0",
+  "description": "Node.js based secure web application server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YeonwooSung/NodeJS_Secure_Server.git"
+  },
+  "keywords": [
+    "node.js",
+    "secure-server",
+    "was"
+  ],
+  "author": "YeonwooSung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YeonwooSung/NodeJS_Secure_Server/issues"
+  },
+  "homepage": "https://github.com/YeonwooSung/NodeJS_Secure_Server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-group-routes": "^1.1.0",
+    "helmet": "^5.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
