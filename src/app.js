@@ -2,23 +2,24 @@ require("dotenv").config();
 require('express-group-routes');
 const express = require("express");
 const app = express();
-const cors = require("cors");
 const helmet = require('helmet');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // use helmet to secure express headers
-app.use(
-    helmet({
-        crossOriginEmbedderPolicy: false,
-        // contentSecurityPolicy: false,
-        // frameguard: false,
-    })
-);
+app.use(helmet())
+// app.use(
+//     helmet({
+//         // crossOriginEmbedderPolicy: false,
+//         // contentSecurityPolicy: false,
+//         // frameguard: false,
+//     })
+// );
 
 // use cors to allow cross origin resource sharing
-app.use(cors());
+// const cors = require("cors");
+// app.use(cors());
 
 
 const { API_GROUP_VER } = process.env;
