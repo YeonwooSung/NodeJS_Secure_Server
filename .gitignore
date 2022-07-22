@@ -1,2 +1,7 @@
 node_modules
 .DS_Store
+
+# whitelist filepaths
+whitelist.txt
+whitelist_a.txt
+whitelist_b.txt
