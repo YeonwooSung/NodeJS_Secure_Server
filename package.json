@@ -31,7 +31,7 @@
     "express-group-routes": "^1.1.0",
     "helmet": "^5.1.0",
     "ip-whitelist": "^1.2.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.4.6",
     "validatorjs": "^3.22.1"
   },
